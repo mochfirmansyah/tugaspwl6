@@ -94,6 +94,10 @@
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>
                 </form>
+                <div class="hidden space-x8 sm:-my-px sm:ml-10 sm:flex">
+                    <X-nav-link :href="route('book')" :active="request()->routesIs('book')">
+                    {{__('Book')}}
+</X-nav-link>
             </div>
         </div>
     </div>
